@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+
+	<fieldset
+		name="map"
+		addfieldpath="/administrator/components/com_contactmap/models/fields"
+		label="GMAPFP_MAP_ZONE">
+
+        <field name="contactmap_height" type="text" default="400" label="GMAPFP_HEIGHT" size="10" description="GMAPFP_HEIGHT_DESC" />
+        <field name="contactmap_auto" type="radio" default="1" label="GMAPFP_AUTO" description="GMAPFP_AUTO_DESC">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+		<field type="contactmapmap" label="GMAPFP_MAP_CENTRE" description="GMAPFP_MAP_CENTRE_DESC" />
+        <field name="contactmap_centre_lat" type="hidden" default="" label="GMAPFP_CENTRE_LAT" size="20" description="GMAPFP_CENTRE_LAT_DESC" />
+        <field name="contactmap_centre_lng" type="hidden" default="" label="GMAPFP_CENTRE_LNG" size="20" description="GMAPFP_CENTRE_LNG_DESC" />
+        <field name="contactmap_zoom" type="list" default="10" label="GMAPFP_ZOOM" description="GMAPFP_ZOOM_DESC">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+        </field>
+        <field name="contactmap_zoom_lightbox_carte" type="list" default="0" label="GMAPFP_ZOOM_LIGHTBOX_CARTE" description="GMAPFP_ZOOM_LIGHTBOX_CARTE_DESC">
+            <option value="0">GMAPFP_SAME_ZOOM</option>
+            <option value="100">GMAPFP_MAP_ZOOM</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+        </field>
+        <field name="contactmap_zoom_lightbox_imprimer" type="list" default="0" label="GMAPFP_ZOOM_LIGHTBOX_IMPRIMER" description="GMAPFP_ZOOM_LIGHTBOX_IMPRIMER_DESC">
+            <option value="0">GMAPFP_SAME_ZOOM</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+        </field>
+        <field name="contactmap_width_bulle_contactmap" type="text" default="400" label="GMAPFP_LARGEUR_BULLE_GMAPFP" size="10" description="GMAPFP_LARGEUR_BULLE_GMAPFP_DESC" />
+        <field name="contactmap_taille_bulle_cesure" type="text" default="150" label="GMAPFP_TAILLE_CESURE" size="10" description="GMAPFP_TAILLE_CESURE_DESC" />
+
+	</fieldset>
+	<fieldset
+		name="options"
+		label="GMAPFP_MAP_OPPTION">
+        
+        <field name="contactmap_photo_icon" type="radio" default="0" label="GMAPFP_MARHER_OR_PHOTO" description="GMAPFP_MARHER_OR_PHOTO_DESC">
+            <option value="0">GMAPFP_MARKER</option>
+            <option value="1">GMAPFP_PICTURE</option>
+        </field>
+        <field name="contactmap_itineraire" type="radio" default="0" label="GMAPFP_ITINERAIRE" description="GMAPFP_ITINERAIRE_DESC">
+            <option value="0">JHide</option>
+            <option value="1">JShow</option>
+        </field>
+        <field name="contactmap_traffic" type="radio" default="1" label="GMAPFP_TRAFFIC" description="GMAPFP_TRAFFIC_DESC">
+            <option value="0">JHide</option>
+            <option value="1">JShow</option>
+        </field>
+        <field name="contactmap_streetView" type="radio" default="1" label="GMAPFP_STREET_VIEW" description="GMAPFP_STREET_VIEW_DESC">
+            <option value="0">JHide</option>
+            <option value="1">JShow</option>
+        </field>
+        <field name="contactmap_height_sv" type="text" default="400" label="GMAPFP_HEIGHT_SV" size="10" description="GMAPFP_HEIGHT_SV_DESC" />
+        
+        <field name="contactmap_normal" type="radio" default="1" label="GMAPFP_NORMAL" description="GMAPFP_NORMAL_DESC">
+            <option value="0">JHide</option>
+            <option value="1">JShow</option>
+        </field>
+        <field name="contactmap_satellite" type="radio" default="1" label="GMAPFP_SATELLITE" description="GMAPFP_SATELLITE_DESC">
+            <option value="0">JHide</option>
+            <option value="1">JShow</option>
+        </field>
+        <field name="contactmap_hybrid" type="radio" default="1" label="GMAPFP_HYBRID" description="GMAPFP_HYBRID_DESC">
+            <option value="0">JHide</option>
+            <option value="1">JShow</option>
+        </field>
+        <field name="contactmap_physic" type="radio" default="1" label="GMAPFP_PHYSIC" description="GMAPFP_PHYSIC_DESC">
+            <option value="0">JHide</option>
+            <option value="1">JShow</option>
+        </field>
+        <field name="contactmap_vertical" type="radio" default="1" label="GMAPFP_VERTICAL" description="GMAPFP_VERTICAL_DESC">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="contactmap_choix_affichage_carte" type="list" default="10" label="GMAPFP_AFFICHAGE_CARTE" description="GMAPFP_AFFICHAGE_CARTE_DESC">
+            <option value="1">GMAPFP_NORMAL</option>
+            <option value="2">GMAPFP_SATELLITE</option>
+            <option value="3">GMAPFP_HYBRID</option>
+            <option value="4">GMAPFP_PHYSIC</option>
+        </field>
+        <field name="contactmap_mapcontrol" type="radio" default="1" label="GMAPFP_MAPCONTROL" description="GMAPFP_MAPCONTROL_DESC">
+            <option value="0">JHide</option>
+            <option value="1">JShow</option>
+        </field>
+        <field name="contactmap_scalecontrol" type="radio" default="1" label="GMAPFP_SCALECONTROL" description="GMAPFP_SCALECONTROL_DESC">
+            <option value="0">JHide</option>
+            <option value="1">JShow</option>
+        </field>
+        <field name="contactmap_mousewheel" type="radio" default="1" label="GMAPFP_MOUSEWHEEL" description="GMAPFP_MOUSEWHEEL_DESC">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="contactmap_plus_info" type="radio" default="1" label="GMAPFP_PLUS_INFOS" description="GMAPFP_PLUS_INFOS_DESC">
+            <option value="0">JHide</option>
+            <option value="1">JShow</option>
+        </field>
+        
+	</fieldset>
+	<fieldset
+		name="affichage"
+		label="GMAPFP_FORM_OPPTION">
+        
+        <field name="allow_vcard" type="radio" default="1" label="VCard" description="VCard">
+            <option value="0">JHide</option>
+            <option value="1">JShow</option>
+        </field>
+        <field name="contactmap_afficher_horaires_prix" type="radio" default="1" label="GMAPFP_AFFICHER_HORAIRES_PRIX" description="GMAPFP_AFFICHER_HORAIRES_PRIX_DESC">
+            <option value="0">JHide</option>
+            <option value="1">JShow</option>
+        </field>
+        <field name="contactmap_hauteur_img" type="text" default="100" label="GMAPFP_HAUTEUR_IMG" size="10" description="GMAPFP_HAUTEUR_IMG_DESC" />
+        <field name="contactmap_afficher_captcha" type="radio" default="1" label="GMAPFP_AFFICHER_CAPTCHA" description="GMAPFP_AFFICHER_CAPTCHA_DESC">
+            <option value="0">JHide</option>
+            <option value="1">JShow</option>
+        </field>
+
+	</fieldset>
+	<fieldset
+		name="autres"
+		label="GMAPFP_DIVERS">
+        
+        <field name="contactmap_geoXML" type="text" default="" label="GMAPFP_GEO_XML" size="60" description="GMAPFP_GEO_XML_DESC" />
+
+        <field name="@spacer" type="spacer" default="" label="" description="" />
+        
+        <field name="contactmap_licence" type="radio" default="1" label="GMAPFP_LICENCE" description="GMAPFP_LICENCE">
+            <option value="0">JHide</option>
+            <option value="1">JShow</option>
+        </field>
+	</fieldset>
+</config>

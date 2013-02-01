@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: default.xml 10880 2008-08-31 17:51:53Z willebil $ -->
+<metadata>
+    <layout title="CONTACTMAP_VUE_CONTACT">
+        <message>
+            <![CDATA[CONTACTMAP_VUE_CONTACT_DESC]]>
+        </message>
+    </layout>
+	<fields name="request">
+		<fieldset name="request"
+		 	addfieldpath="/administrator/components/com_contactmap/models/fields">
+			
+        <name>CONTACTMAP_VUE_CONTACT</name>
+        <description>CONTACTMAP_VUE_CONTACT_DESC</description>
+            <field name="id" type="modal_article" default="" label="GMAPFP_SELECT_CONTACT" description="GMAPFP_SELECT_CONTACT_DESC" required="true" />
+        </fieldset>
+	</fields>
+	<fields name="params">
+		<fieldset name="advanced" label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS" >
+            <field name="affichage_colonne" type="list" default="1" label="GMAPFP_AFF_TYPE" description="GMAPFP_AFF_TYPE_DESC">
+                <option value="0">GMAPFP_LIGNE</option>
+                <option value="1">GMAPFP_COLONNE</option>
+            </field>
+			<field name="show_adresse" type="radio" default="1" label="GMAPFP_ADRESSE" description="GMAPFP_NAME_DESC">
+				<option value="0">JHide</option>
+				<option value="1">JShow</option>
+			</field>
+			<field name="show_cp" type="radio" default="1" label="GMAPFP_CODEPOSTAL" description="GMAPFP_NAME_DESC">
+				<option value="0">JHide</option>
+				<option value="1">JShow</option>
+			</field>
+			<field name="show_city" type="radio" default="1" label="GMAPFP_VILLE" description="GMAPFP_NAME_DESC">
+				<option value="0">JHide</option>
+				<option value="1">JShow</option>
+			</field>
+			<field name="show_state" type="radio" default="1" label="GMAPFP_DEPARTEMENT" description="GMAPFP_NAME_DESC">
+				<option value="0">JHide</option>
+				<option value="1">JShow</option>
+			</field>
+			<field name="show_conutry" type="radio" default="1" label="GMAPFP_PAY" description="GMAPFP_NAME_DESC">
+				<option value="0">JHide</option>
+				<option value="1">JShow</option>
+			</field>
+			<field name="show_phone" type="radio" default="1" label="GMAPFP_TEL" description="GMAPFP_NAME_DESC">
+				<option value="0">JHide</option>
+				<option value="1">JShow</option>
+			</field>
+			<field name="show_fax" type="radio" default="1" label="GMAPFP_FAX" description="GMAPFP_NAME_DESC">
+				<option value="0">JHide</option>
+				<option value="1">JShow</option>
+			</field>
+			<field name="show_email" type="radio" default="1" label="GMAPFP_EMAIL" description="GMAPFP_NAME_DESC">
+				<option value="0">JHide</option>
+				<option value="1">JShow</option>
+			</field>
+			<field name="show_email_field" type="radio" default="1" label="GMAPFP_EMAIL_FIELD" description="GMAPFP_HIDE_FIELD_DESC">
+				<option value="0">JHide</option>
+				<option value="1">JShow</option>
+			</field>
+			<field name="show_web" type="radio" default="1" label="GMAPFP_SITE_WEB" description="GMAPFP_NAME_DESC">
+				<option value="0">JHide</option>
+				<option value="1">JShow</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

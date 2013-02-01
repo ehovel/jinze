@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+
+    <name>ContactMap</name>
+    <!-- The following elements are optional and free of formatting conttraints -->
+    <creationDate>Mars 2012</creationDate>
+    <author>Fabrice4821</author>
+    <authorEmail>webmaster@gmapfp.org</authorEmail>
+    <authorUrl>http://www.gmapfp.org</authorUrl>
+    <copyright>All rights reserved</copyright>
+    <license>GNU/GPL</license>
+    <version>4.9</version>
+    <description>Composant ContactMap</description>
+
+    <scriptfile>script.php</scriptfile>
+	<install>
+        <sql>
+            <file charset="utf8" driver="mysql">sql/install.sql</file>
+			<file driver="mysql">sql/install.nonutf8.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file charset="utf8" driver="mysql">sql/uninstall.sql</file>
+            <file driver="mysql">sql/uninstall.sql</file>
+        </sql>
+    </uninstall>
+	<update> <!-- Runs on update; New in 1.6 -->
+			<schemas>
+					<schemapath type="mysql">sql/updates/mysql</schemapath>
+			</schemas>
+	</update>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>contactmap.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>images</folder>
+        <folder>models</folder>
+        <folder>libraries</folder>
+        <folder>views</folder>
+        <folder>floatbox</folder>
+    </files>
+    <languages folder="site">
+        <language tag="fr-FR">language/fr-FR.com_contactmap.ini</language>
+        <language tag="en-GB">language/en-GB.com_contactmap.ini</language>
+        <language tag="zh-CN">language/zh-CN.com_contactmap.ini</language>
+        <language tag="zh-TW">language/zh-TW.com_contactmap.ini</language>
+    </languages>
+    <media destination="../images/contactmap" folder="images">
+        <filename>blank.png</filename>
+        <folder>icons</folder>
+    </media>
+
+    <administration>
+        <menu img="components/com_contactmap/images/logo_contactmap.png">ContactMap</menu>
+        <submenu>
+            <menu img="class:cpanel" link="option=com_contactmap" view="Accueil" alt="ContactMap/Accueil">Com_ContactMap.Accueil</menu>
+            <menu img="class:user" link="option=com_contactmap&amp;controller=contactmap&amp;task=view" view="ContactMaps" alt="ContactMap/ContactMaps">Com_ContactMap.Contacts</menu>
+            <menu img="class:category" link="option=com_categories&amp;section=com_contact_details" view="categories" alt="ContactMap/Categories">Com_ContactMap.Categories</menu>
+            <menu img="components/com_contactmap/images/marqueur.png" link="option=com_contactmap&amp;controller=marqueurs&amp;task=view" view="Marqueurs" alt="ContactMap/Marqueurs">Com_ContactMap.Marqueurs</menu>
+            <menu img="class:content" link="option=com_contactmap&amp;controller=css&amp;task=view" view="CSS" alt="ContactMap/CSS">Com_ContactMap.CSS</menu>
+        </submenu>
+        <languages folder="admin">
+            <language tag="fr-FR">language/fr-FR.com_contactmap.ini</language>
+            <language tag="en-GB">language/en-GB.com_contactmap.ini</language>
+            <language tag="fr-FR">language/fr-FR.com_contactmap.sys.ini</language>
+            <language tag="en-GB">language/en-GB.com_contactmap.sys.ini</language>
+            <language tag="zh-CN">language/zh-CN.com_contactmap.ini</language>
+            <language tag="zh-CN">language/zh-CN.com_contactmap.sys.ini</language>
+            <language tag="zh-TW">language/zh-TW.com_contactmap.ini</language>
+            <language tag="zh-TW">language/zh-TW.com_contactmap.sys.ini</language>
+        </languages>
+        <files folder="admin">
+            <filename>contactmap.php</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>helpers.php</filename>
+            <filename>index.html</filename>
+
+            <folder>controllers</folder>
+            <folder>elements</folder>
+			<folder>helpers</folder>
+            <folder>images</folder>
+            <folder>models</folder>
+			<folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+    </administration>
+</extension>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: default.xml 10880 2008-08-31 17:51:53Z willebil $ -->
+<metadata>
+    <layout title="CONTACTMAP_VUE_MAP">
+        <message>
+            <![CDATA[CONTACTMAP_VUE_MAP_DESC]]>
+        </message>
+    </layout>
+	<fields name="params">
+		<fieldset name="advanced" label="CONTACTMAP_VUE_MAP" >
+        <description>CONTACTMAP_VUE_MAP_DESC</description>
+            <field name="affichage_colonne" type="list" default="1" label="GMAPFP_AFF_TYPE" description="GMAPFP_AFF_TYPE_DESC">
+                <option value="0">GMAPFP_LIGNE</option>
+                <option value="1">GMAPFP_COLONNE</option>
+            </field>
+		</fieldset>
+	</fields>
+</metadata>

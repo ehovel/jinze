@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" version="2.5" method="upgrade">
+    <name>com_virtuemart_zh-CN</name>
+    <author>The VirtueMart Development and Translation Team</author>
+    <creationDate>December 21 2012</creationDate>
+    <copyright>Copyright (C) 2004-2012 Virtuemart Team. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>max|at|virtuemart.net</authorEmail>
+    <authorUrl>http://www.virtuemart.net</authorUrl>
+    <version>2.0.16</version>
+    <description>This zh-CN language pack for VirtueMart has been installed successfully. It includes files for the component.ini, modules, and plugins. Some languages may not have all the files.
+    </description>
+    <fileset>
+        <files target="administrator/language/zh-CN" folder="admin/zh-CN">
+            <file>zh-CN.com_virtuemart_countries.ini</file>
+            <file>zh-CN.com_virtuemart_media.ini</file>
+            <file>zh-CN.com_virtuemart.ini</file>
+            <file>zh-CN.com_virtuemart.menu.ini</file>
+            <file>zh-CN.com_virtuemart.sys.ini</file>
+            <file>zh-CN.plg_search_virtuemart.ini</file>
+            <file>zh-CN.plg_vmcustom_specification.ini</file>
+            <file>zh-CN.plg_vmcustom_specification.sys.ini</file>
+            <file>zh-CN.plg_vmcustom_stockable.ini</file>
+            <file>zh-CN.plg_vmcustom_stockable.sys.ini</file>
+            <file>zh-CN.plg_vmcustom_textinput.ini</file>
+            <file>zh-CN.plg_vmcustom_textinput.sys.ini</file>
+            <file>zh-CN.plg_vmpayment_authorizenet.ini</file>
+            <file>zh-CN.plg_vmpayment_authorizenet.sys.ini</file>
+            <file>zh-CN.plg_vmpayment_heidelpay.ini</file>
+            <file>zh-CN.plg_vmpayment_heidelpay.sys.ini</file>
+            <file>zh-CN.plg_vmpayment_klarna.ini</file>
+            <file>zh-CN.plg_vmpayment_klarna.sys.ini</file>
+            <file>zh-CN.plg_vmpayment_moneybookers_acc.sys.ini</file>
+            <file>zh-CN.plg_vmpayment_moneybookers_did.sys.ini</file>
+            <file>zh-CN.plg_vmpayment_moneybookers_gir.sys.ini</file>
+            <file>zh-CN.plg_vmpayment_moneybookers_idl.sys.ini</file>
+            <file>zh-CN.plg_vmpayment_moneybookers_obt.sys.ini</file>
+            <file>zh-CN.plg_vmpayment_moneybookers_pwy.sys.ini</file>
+            <file>zh-CN.plg_vmpayment_moneybookers_sft.sys.ini</file>
+            <file>zh-CN.plg_vmpayment_moneybookers_wlt.sys.ini</file>
+            <file>zh-CN.plg_vmpayment_moneybookers.ini</file>
+            <file>zh-CN.plg_vmpayment_paypal.ini</file>
+            <file>zh-CN.plg_vmpayment_paypal.sys.ini</file>
+            <file>zh-CN.plg_vmpayment_payzen.ini</file>
+            <file>zh-CN.plg_vmpayment_payzen.sys.ini</file>
+            <file>zh-CN.plg_vmpayment_standard.ini</file>
+            <file>zh-CN.plg_vmpayment_standard.sys.ini</file>
+            <file>zh-CN.plg_vmpayment_systempay.ini</file>
+            <file>zh-CN.plg_vmpayment_systempay.sys.ini</file>
+            <file>zh-CN.plg_vmshipment_weight_countries.ini</file>
+            <file>zh-CN.plg_vmshipment_weight_countries.sys.ini</file>
+        </files>
+        <files target="language/zh-CN" folder="site/zh-CN">
+            <file>zh-CN.com_virtuemart.ini</file>
+            <file>zh-CN.com_virtuemart.sef.ini</file>
+            <file>zh-CN.com_virtuemart.sys.ini</file>
+            <file>zh-CN.mod_virtuemart_cart.ini</file>
+            <file>zh-CN.mod_virtuemart_cart.sys.ini</file>
+            <file>zh-CN.mod_virtuemart_category.ini</file>
+            <file>zh-CN.mod_virtuemart_category.sys.ini</file>
+            <file>zh-CN.mod_virtuemart_currencies.ini</file>
+            <file>zh-CN.mod_virtuemart_currencies.sys.ini</file>
+            <file>zh-CN.mod_virtuemart_manufacturer.ini</file>
+            <file>zh-CN.mod_virtuemart_manufacturer.sys.ini</file>
+            <file>zh-CN.mod_virtuemart_product.ini</file>
+            <file>zh-CN.mod_virtuemart_product.sys.ini</file>
+            <file>zh-CN.mod_virtuemart_search.ini</file>
+            <file>zh-CN.mod_virtuemart_search.sys.ini</file>
+        </files>
+    </fileset>
+
+
+</extension>

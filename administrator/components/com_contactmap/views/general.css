@@ -1,0 +1,6 @@
+/* -- General styles ------------------------------ */
+
+td input, td label {
+	float:		none;
+	display:	inline;
+}
