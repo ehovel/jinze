@@ -42,11 +42,6 @@ $doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/jinze.css
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
 <head>
 <jdoc:include type="head" />
-<link rel="shortcut icon" href="favicon.png" />
-<script src="js/jquery.js" type="text/javascript"></script>
-<script src="js/plugin.js" type="text/javascript"></script>
-<script src="js/all.js" type="text/javascript"></script>
-<jdoc:include type="head" />
 
 <!--[if lte IE 6]>
 <link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/ieonly.css" rel="stylesheet" type="text/css" />
