@@ -130,7 +130,7 @@ div.handle{z-index:10;visibility:hidden;position:absolute;cursor:crosshair;top:0
 
 
 
-#nav{ float:right; clear:both; width:770px; margin:25px 0 20px; color:#fff; }
+#nav{ float:right; clear:both; width:770px; margin:46px 0 0px; color:#fff; }
 #nav .item{ float:left; display:inline; padding-bottom:30px; border-bottom:8px solid #ffffff;}
 #nav .itemLink{ display:inline-block; padding:0 20px; border-right:1px solid #c2c2c2; height:22px; line-height:22px; color:#2c2c2c; font-size:16px; text-transform:uppercase; font-weight:bold;}
 #nav li.current{ border-bottom:8px solid #b80000;}

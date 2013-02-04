@@ -288,7 +288,6 @@ class NSP_GK4_Helper {
 				$categories = ($this->config["data_source"] != "com_all_articles") ? $newsClass->getSources($this->config) : false;
 				// getting content
 				$amountOfArts = ($this->config['news_column'] * $this->config['news_rows'] * $this->config['news_full_pages']) + ($this->config['links_amount'] * $this->config['news_short_pages'] * $this->config['links_columns_amount']);
-				
 				$this->content = $newsClass->getArticles($categories, $this->config, $amountOfArts);		   	
 			} else if($this->config["data_source"] == "k2_categories" ||
 		        $this->config["data_source"] == "k2_tags" ||
@@ -431,7 +430,6 @@ class NSP_GK4_Helper {
 			        $categories = $newsClass->getSources($this->config);
 			        // getting content
 			    	$amountOfProducts = ($this->config['news_column'] * $this->config['news_rows'] * $this->config['news_full_pages']) + ($this->config['links_amount'] * $this->config['news_short_pages'] * $this->config['links_columns_amount']); 
-			    	
 			    	$this->content = $newsClass->getArticles($categories, $this->config, $amountOfProducts);	
 				}
 			} else {

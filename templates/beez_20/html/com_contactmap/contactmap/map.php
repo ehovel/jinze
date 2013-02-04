@@ -51,11 +51,11 @@ $first_contacter = array_shift($this->rows);
 			<td><?php echo $first_contacter->fax?></td>
 		</tr>
 		<tr>
-			<td class="th">地址</td>
+			<td>地址</td>
 			<td><?php echo $first_contacter->address?></td>
 		</tr>
 		<tr class="th">
-			<td class="th">邮箱</td>
+			<td>邮箱</td>
 			<td><?php echo $first_contacter->email_to?></td>
 		</tr>
 	</tbody></table>
