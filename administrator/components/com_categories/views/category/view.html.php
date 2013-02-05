@@ -77,7 +77,7 @@ class CategoriesViewCategory extends JViewLegacy
 
 		// Get the results for each action.
 		$canDo = CategoriesHelper::getActions($component, $this->item->id);
-
+// 		print_r($canDo);exit;
 		// If a component categories title string is present, let's use it.
 		if ($lang->hasKey($component_title_key = $component.($section?"_$section":'').'_CATEGORY_'.($isNew?'ADD':'EDIT').'_TITLE')) {
 			$title = JText::_($component_title_key);
