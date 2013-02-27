@@ -36,7 +36,7 @@ class EhovelmediaViewMediaList extends JViewLegacy
 		$this->assignRef('documents', $documents);
 		$this->assignRef('folders', $folders);
 		$this->assignRef('state', $state);
-
+		
 		parent::display($tpl);
 	}
 

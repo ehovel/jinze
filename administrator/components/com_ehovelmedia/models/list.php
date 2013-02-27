@@ -18,6 +18,36 @@ jimport('joomla.filesystem.file');
  */
 class EhovelmediaModelList extends JModelLegacy
 {
+	public $category_id = 0;
+	function _buildQuery()
+	{
+		$where = $this->category_id ? 'WHERE category_id='.$this->category_id : '';
+		$query = "SELECT * FROM ".$this->_db->nameQuote('#__ehovel_resources')." $where ORDER BY ".$this->_db->nameQuote('date_add')." DESC";
+	
+		return $query;
+	}
+	
+	function getImages()
+	{
+		$list = $this->getData();
+	
+		return $list['images'];
+	}
+	
+	function getData() {
+		//当前分类id
+		$categoryId = $this->getState('folder');
+		if ($categoryId) {
+			$this->category_id = $categoryId;
+		}
+		if(empty($this->_data))
+		{
+			$query = $this->_buildQuery();
+			$this->_data['images'] = $this->_getList($query, $this->getState('limitstart'), $this->getState('limit'));
+		}
+		
+		return $this->_data;
+	}
 	function getState($property = null, $default = null)
 	{
 		static $set;
@@ -33,13 +63,6 @@ class EhovelmediaModelList extends JModelLegacy
 		}
 
 		return parent::getState($property, $default);
-	}
-
-	function getImages()
-	{
-		$list = $this->getList();
-
-		return $list['images'];
 	}
 
 	function getFolders()
@@ -70,7 +93,8 @@ class EhovelmediaModelList extends JModelLegacy
 		if (is_array($list)) {
 			return $list;
 		}
-
+		
+		
 		// Get current path from request
 		$current = $this->getState('folder');
 
@@ -101,7 +125,7 @@ class EhovelmediaModelList extends JModelLegacy
 			$fileList	= JFolder::files($basePath);
 			$folderList = JFolder::folders($basePath);
 		}
-
+		
 		// Iterate over the files if they exist
 		if ($fileList !== false) {
 			foreach ($fileList as $file)

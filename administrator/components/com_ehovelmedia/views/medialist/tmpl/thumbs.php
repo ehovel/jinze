@@ -29,15 +29,13 @@ defined('_JEXEC') or die;
                 </tr>
             </thead>
             <?php
-            $this->items = array();
             $k = 0;
-            $n = count($this->items);
+            $n = count($this->images);
 
             for($i = 0; $i < $n; $i++)
             {
-                $row = $this->items[$i];
+                $row = $this->images[$i];
                 $checked = JHTML::_('grid.id', $i, $row->id);
-                $published = JHTML::_('grid.published', $row, $i);
                 $link = JRoute::_('index.php?option=com_easybookreloaded&controller=entry&task=edit&cid[]='.$row->id);
                 ?>
                 <tr class="<?php echo "row$k"; ?>">
@@ -45,63 +43,15 @@ defined('_JEXEC') or die;
                         <?php echo $checked; ?>
                     </td>
                     <td>
-                        <?php echo $row->gbname; ?>
+                        <?php echo $row->name; ?>
                     </td>
                     <td>
-                        <span class="hasTip" title="<?php echo $row->gbtitle ?>">
-                            <a href="<?php echo $link ?>">
-                                <?php
-                                if(strlen($row->gbtitle) > 45)
-                                {
-                                    echo substr($row->gbtitle, 0, 45)."...";
-                                }
-                                else
-                                {
-                                    echo $row->gbtitle;
-                                }
-                                ?>
-                            </a>
+                        <span class="hasTip" title="<?php echo $row->name ?>">
+                            <image width="150" src="<?php echo is_int($row->attach_id)?'/attachment/view/'.$row->attach_id:$row->attach_id;?>" />
                         </span>
                     </td>
-                    <td>
-                        <span class="hasTip" title="<?php echo $row->gbtext ?>">
-                            <a href="<?php echo $link ?>">
-                                <?php
-                                if(strlen($row->gbtext) > 165)
-                                {
-                                    echo substr($row->gbtext, 0, 165)."...";
-                                }
-                                else
-                                {
-                                    echo $row->gbtext;
-                                }
-                                ?>
-                            </a>
-                        </span>
-                    </td>
-                    <td>
-                        <?php echo JHTML::_('date', $row->gbdate, JText::_('DATE_FORMAT_LC2')); ?>
-                    </td>
                     <td style="text-align: center;">
-                        <?php echo $row->gbvote; ?>
-                    </td>
-                    <td>
-                        <?php
-                        if($row->gbcomment)
-                        {
-                            if(strlen($row->gbcomment) > 75)
-                            {
-                                echo substr($row->gbcomment, 0, 75)."...";
-                            }
-                            else
-                            {
-                                echo $row->gbcomment;
-                            }
-                        }
-                        ?>
-                    </td>
-                    <td style="text-align: center;">
-                        <?php echo $published; ?>
+                        <?php echo $row->date_upd;?>
                     </td>
                 </tr>
                 <?php
@@ -111,7 +61,7 @@ defined('_JEXEC') or die;
             <tfoot>
                 <tr>
                     <td colspan="8">
-                        <?php echo $this->pagination->getListFooter(); ?>
+                        <?php //echo $this->pagination->getListFooter(); ?>
                     </td>
                 </tr>
             </tfoot>

@@ -24,7 +24,7 @@ class EhovelmediaModelImages extends JModel
         $this->setState('limit', $limit);
         $this->setState('limitstart', $limitstart);
     }
-
+    
     function _buildQuery()
     {
         $query = "SELECT * FROM ".$this->_db->nameQuote('#__easybook')." ORDER BY ".$this->_db->nameQuote('gbdate')." DESC";

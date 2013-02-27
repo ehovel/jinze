@@ -14,7 +14,7 @@ $user = JFactory::getUser();
 <?php //echo JHtml::_('select.options', JHtml::_('category.options', 'com_ehovelmedia'), 'value', 'text', $this->state->get('filter.category_id'));?>
 <table width="100%">
 	<tr valign="top">
-		<td>
+		<td width="25%">
 			<fieldset id="treeview">
 				<legend><?php echo JText::_('COM_MEDIA_FOLDERS'); ?></legend>
 				<?php echo $this->loadTemplate('folders'); ?>
