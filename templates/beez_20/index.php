@@ -34,13 +34,15 @@ if($menu->getActive()==$menu->getDefault()){
 }
 $doc				= JFactory::getDocument();
 $templateparams		= $app->getTemplate(true)->params;
-
 $doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/jinze.css', $type = 'text/css', $media = 'screen,projection');
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>index</title>
+<link rel="shortcut icon" href="favicon.ico" />
 <jdoc:include type="head" />
 
 <!--[if lte IE 6]>
@@ -175,7 +177,7 @@ $doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/jinze.css
 		<div id="footer">
 			<div class="layout footer_inner">
 				<p><span class="copyright">Copyright &copy; <?php echo date('Y')?> 版权所有：江苏金泽重型机械有限公司  苏ICP备11014662号-1 </span><span><em>厂址：</em>江苏南通海安开发区立发大道8号</span>
-					<span><em>网址：</em>www.jinzezj.com</span></p><p>
+					<span><em>网址：</em>www.jinzezj.com</span><br />
 					<span><em>手机：</em>13901477088 / 13506276898</span>
 					<span><em>电话：</em>0513-88661199</span>
 					<span><em>传真：</em>0513-88661199</span>

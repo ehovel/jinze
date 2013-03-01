@@ -24,25 +24,6 @@ defined('_JEXEC') or die('Restricted access');
 JHTML::_('behavior.modal');
 // JHTML::_('behavior.tooltip');
 $document = JFactory::getDocument();
-$document->addScriptDeclaration("
-	jQuery(document).ready(function($) {
-		$('a.ask-a-question').click( function(){
-			$.facebox({
-				iframe: '" . $this->askquestion_url . "',
-				rev: 'iframe|550|550'
-			});
-			return false ;
-		});
-	/*	$('.additional-images a').mouseover(function() {
-			var himg = this.href ;
-			var extension=himg.substring(himg.lastIndexOf('.')+1);
-			if (extension =='png' || extension =='jpg' || extension =='gif') {
-				$('.main-image img').attr('src',himg );
-			}
-			console.log(extension)
-		});*/
-	});
-");
 /* Let's see if we found the product */
 if (empty($this->product)) {
     echo JText::_('COM_VIRTUEMART_PRODUCT_NOT_FOUND');
@@ -71,9 +52,10 @@ if (empty($this->product)) {
 	<div class="bd">
 		<div class="pic">
 		<?php
-			echo $this->loadTemplate('images');
+			echo $this->loadTemplate('imagesnew');
 		?>
 		</div>
+		<div class="des">
 		 <?php
 		    if (!empty($this->product->product_s_desc)) {
 			?>
@@ -94,5 +76,6 @@ if (empty($this->product)) {
 			   echo $this->product->product_desc; 
 		    } // Product Description END
 		 ?>
+		 </div>
 	</div>
 </div>
