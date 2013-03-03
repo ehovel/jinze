@@ -41,7 +41,6 @@ $doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/jinze.css
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>index</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <jdoc:include type="head" />
 

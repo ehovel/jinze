@@ -100,7 +100,7 @@ class VmImage extends VmMediaHandler {
 	 * @param boolean $save Execute update function
 	 * @return name of the thumbnail
 	 */
-	public function createThumb($width,$height) {
+	public function createThumb($width='',$height='') {
 
 		if(empty($this->file_url_folder)){
 			vmError('Couldnt create thumb, no directory given. Activate vmdebug to understand which database entry is creating thies error');
