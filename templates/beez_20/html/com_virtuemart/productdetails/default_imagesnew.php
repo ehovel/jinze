@@ -53,7 +53,11 @@ if (!empty($this->product->images)) {
           <ul class="ad-thumb-list">
           <?php
 			$count_images = count ($this->product->images);
+<<<<<<< HEAD
 			if ($count_images > 0) {
+=======
+			if ($count_images > 1) {
+>>>>>>> ac367e4d9fe39b2192081c2634da77d1a41e8588
 				?>
 				<?php
 				for ($i = 0; $i < $count_images; $i++) {

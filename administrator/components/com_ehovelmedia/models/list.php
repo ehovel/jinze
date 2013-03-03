@@ -8,7 +8,11 @@ defined('_JEXEC') or die;
 
 jimport('joomla.filesystem.folder');
 jimport('joomla.filesystem.file');
+<<<<<<< HEAD
 
+=======
+jimport('joomla.application.component.modellist');
+>>>>>>> ac367e4d9fe39b2192081c2634da77d1a41e8588
 /**
  * Media Component List Model
  *
@@ -16,7 +20,11 @@ jimport('joomla.filesystem.file');
  * @subpackage	com_media
  * @since 1.5
  */
+<<<<<<< HEAD
 class EhovelmediaModelList extends JModelLegacy
+=======
+class EhovelmediaModelList extends JModelList
+>>>>>>> ac367e4d9fe39b2192081c2634da77d1a41e8588
 {
 	public $category_id = 0;
 	function _buildQuery()
@@ -43,11 +51,19 @@ class EhovelmediaModelList extends JModelLegacy
 		if(empty($this->_data))
 		{
 			$query = $this->_buildQuery();
+<<<<<<< HEAD
 			$this->_data['images'] = $this->_getList($query, $this->getState('limitstart'), $this->getState('limit'));
+=======
+			$this->_data['images'] = $this->_getList($query, $this->getState('list.start'), $this->getState('list.limit'));
+>>>>>>> ac367e4d9fe39b2192081c2634da77d1a41e8588
 		}
 		
 		return $this->_data;
 	}
+<<<<<<< HEAD
+=======
+	
+>>>>>>> ac367e4d9fe39b2192081c2634da77d1a41e8588
 	function getState($property = null, $default = null)
 	{
 		static $set;

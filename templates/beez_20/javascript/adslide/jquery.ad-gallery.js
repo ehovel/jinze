@@ -9,7 +9,11 @@
  */
 (function($) {
   $.fn.adGallery = function(options) {
+<<<<<<< HEAD
     var defaults = { loader_image: 'loader.gif',
+=======
+    var defaults = { loader_image: '/images/loader.gif',
+>>>>>>> ac367e4d9fe39b2192081c2634da77d1a41e8588
                      start_at_index: 0,
                      update_window_hash: true,
                      description_wrapper: false,

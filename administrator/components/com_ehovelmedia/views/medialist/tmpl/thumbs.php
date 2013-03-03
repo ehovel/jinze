@@ -61,7 +61,11 @@ defined('_JEXEC') or die;
             <tfoot>
                 <tr>
                     <td colspan="8">
+<<<<<<< HEAD
                         <?php //echo $this->pagination->getListFooter(); ?>
+=======
+                        <?php echo $this->pagination->getListFooter(); ?>
+>>>>>>> ac367e4d9fe39b2192081c2634da77d1a41e8588
                     </td>
                 </tr>
             </tfoot>
