@@ -130,15 +130,15 @@ div.handle{z-index:10;visibility:hidden;position:absolute;cursor:crosshair;top:0
 
 
 
-#nav{ float:right; clear:both; width:770px; margin:25px 0 20px; color:#fff; }
+#nav{ float:right; clear:both; width:770px; margin:46px 0 0px; color:#fff; }
 #nav .item{ float:left; display:inline; padding-bottom:30px; border-bottom:8px solid #ffffff;}
 #nav .itemLink{ display:inline-block; padding:0 20px; border-right:1px solid #c2c2c2; height:22px; line-height:22px; color:#2c2c2c; font-size:16px; text-transform:uppercase; font-weight:bold;}
 #nav li.current{ border-bottom:8px solid #b80000;}
 #nav a.itemLink:hover,#nav li.current a.itemLink{ color:#b80000;}
 
 /*footer=========================footer*/
-#footer{overflow:hidden; }
-.footer_inner{width:880px; background:url(../images/bg_footer_logo.png) no-repeat right 30px; position:relative; padding:15px 180px 5px 10px; line-height:22px;}
+#footer{overflow:hidden;text-align:center; }
+.footer_inner{width:880px; background:url(../images/bg_footer_logo.png) no-repeat right 30px; position:relative; padding:15px 180px 5px 10px; line-height:22px;text-align:left;width:880px;}
 #footer p span{padding-right:25px; color:#2c2c2c;}
 #footer p em{font-weight:700;}
 #footer p span.copyright{color:#666666;}

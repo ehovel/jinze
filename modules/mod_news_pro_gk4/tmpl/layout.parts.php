@@ -178,9 +178,7 @@ class NSP_GK4_Layout_Parts {
 			
 			if(JString::strlen($text) > 0) $text = '<p>'.$text.'</p>';
 			$title = htmlspecialchars($news_title);
-			
 			$title = NSP_GK4_Utils::cutText($title, $config['list_title_limit'], $config['list_title_limit_type'], '&hellip;');
-			
 			$title = str_replace('"', "&quot;", $title);
 			$link = ($news_id !== 0) ? JRoute::_(ContentHelperRoute::getArticleRoute($news_id, $news_cid)) : JRoute::_('index.php?option=com_user&view=login');
 			if(JString::strlen($title) > 0) $title = '<h4><a href="'.$link.'" title="'.htmlspecialchars($news_title).'">'.$title.'</a></h4>';

@@ -100,7 +100,7 @@ class VmImage extends VmMediaHandler {
 	 * @param boolean $save Execute update function
 	 * @return name of the thumbnail
 	 */
-	public function createThumb() {
+	public function createThumb($width,$height) {
 
 		if(empty($this->file_url_folder)){
 			vmError('Couldnt create thumb, no directory given. Activate vmdebug to understand which database entry is creating thies error');
@@ -112,8 +112,8 @@ class VmImage extends VmMediaHandler {
 
 		if(!VmConfig::get('img_resize_enable') || $synchronise) return;
 		//now lets create the thumbnail, saving is done in this function
-		$width = VmConfig::get('img_width', 90);
-		$height = VmConfig::get('img_height', 90);
+		if(empty($width)) $width = VmConfig::get('img_width', 90);
+		if(empty($height)) $height = VmConfig::get('img_height', 90);
 
 		// Don't allow sizes beyond 2000 pixels //I dont think that this is good, should be config
 //		$width = min($width, 2000);
@@ -125,7 +125,11 @@ class VmImage extends VmMediaHandler {
 		$bgblue = 255;
 
 		$root = '';
-		$this->file_name_thumb = $this->createThumbName();
+		$this->file_name_thumb = $this->createThumbName($width,$height);
+		
+		if(file_exists($this->file_url_folder_thumb.$this->file_name_thumb.'.'.$this->file_extension)) {
+			return $this->file_url_folder_thumb.$this->file_name_thumb.'.'.$this->file_extension;
+		}
 
 		if($this->file_is_forSale==0){
 
